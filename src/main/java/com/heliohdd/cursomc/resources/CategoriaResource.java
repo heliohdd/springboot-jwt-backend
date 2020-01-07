@@ -1,4 +1,4 @@
-package com.heliohdd.cursomc.resource;
+package com.heliohdd.cursomc.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.heliohdd.cursomc.domain.Categoria;
-import com.heliohdd.cursomc.service.CategoriaService;
+import com.heliohdd.cursomc.services.CategoriaService;
 
 @RestController
 @RequestMapping(value="/categorias")
