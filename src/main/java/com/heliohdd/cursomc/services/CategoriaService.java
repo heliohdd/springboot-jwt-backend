@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.heliohdd.cursomc.domain.Categoria;
-import com.heliohdd.cursomc.repository.CategoriaRepository;
+import com.heliohdd.cursomc.repositories.CategoriaRepository;
 import com.heliohdd.cursomc.services.exceptions.ObjectNotFoundException;
 
 @Service
