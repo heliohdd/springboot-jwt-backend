@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.heliohdd.cursomc.domain.Categoria;
 import com.heliohdd.cursomc.service.CategoriaService;
 
 @RestController
