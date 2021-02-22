@@ -3,7 +3,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/heliohdd/hdsdeliver-sds2/blob/main/LICENSE) 
 
 # Sobre o projeto
-Este projeto é uma aplicação backend que implementa os principais módulos do framework Spring Boot tais como Spring Web MVC, Spring Data JPA,  Banco de Dados MySQL, Spring Security com JWT, Spring Cloud AWS para Serviço AWS S3 para armazenamento de imagens em nuvem.
+Este projeto é uma aplicação backend que implementa os principais módulos do framework Spring Boot tais como Spring Web MVC, Spring Data JPA, Spring Security com JWT e Spring Cloud AWS para Serviço AWS S3 para armazenamento de imagens em nuvem.
 
 Algumas funcionalidades interessantes do projeto são:
 
@@ -14,7 +14,9 @@ Algumas funcionalidades interessantes do projeto são:
 - Busca de Produtos por nome ou por Categoria; e,
 - Paginação com controle de parâmetros adicionais na requisição.
 
-Esta aplicação consiste em um <strong>Sistema de Controle de Pedidos</strong> para o contexto de "e-commerce". Este sitema permite o controle de uma "Loja Virtual" composta por um catálogo de "Produtos" organizados em "Categorias", que podem ser escolhidas pelo "Cliente", e direcionadas para serem entregues em um determinado "Endereço". Após a conclusão do "Pedido", o sistema se comunica com uma API para "Pagamentos" validando então a compra conforme autorização após a realização da operação de pagamento. O sistema ainda envia um e-mail para o cliente com os dados do pedido avisando sobre a confirmação de pagamento.
+Esta aplicação consiste em um <strong>Sistema de Controle de Pedidos</strong> "e-commerce". Este sitema permite o controle de uma "Loja Virtual" composta por um catálogo de "Produtos" organizados em "Categorias", que podem ser escolhidos pelo "Cliente", e direcionados para serem entregues em um determinado "Endereço".
+
+Após a conclusão do "Pedido", o sistema se comunica com uma API externa integrada para solução de "Pagamentos" online validando então a compra conforme autorização após a realização da operação de pagamento. O sistema ainda envia um e-mail para o cliente com os dados do pedido avisando sobre a confirmação de pagamento.
 
 ### Layout
 Veja abaixo as telas que compõem o aplicativo posicionando o cursor sobre as imagens para conferir sua descrição.
@@ -51,32 +53,25 @@ Abaixo é apresentado o modelo conceitual utilizado para o desenvolvimento desta
 # Tecnologias utilizadas
 
 Abaixo são listadas as tecnologias utilizadas para o desenvolvimento desta aplicação.
-
-Confira a documentação da API conforme especificação <b>Open API 3.0</b> neste link: 
- [documentação da API](https://app.swaggerhub.com/apis-docs/heliohdd5/cursomc/1.0#/).
  
 ## Back-end
-
 - <b>Java 11 LTS</b> - (versão com suporte prolongado)
-- <b>Spring Boot 2.0.0</b> - (versão estável atual do framework)
+- <b>Spring Boot 2.0.0</b> - (versão estável do framework)
 - <b>JPA/Hibernate</b> - (mapeamento ORM)
 - <b>Maven</b> - (gerenciamento de dependências)
-- <b>H2</b> - (banco de dados em memória)
 - <b>Postman</b> - (testes durante o desenvolvimento)
+## Banco de Dados
+- H2 - (para ambiente de testes)
+- MySQL - (para ambiente de desenvolvimento e de produção)
 ## Front-end web
-- <b>HTML5/CSS3/JS/TypeScript</b> - (desenvolvimento web)
+- <b>HTML5/CSS3/JS/TypeScript</b> - (desenvolvimento web responsiva)
 - <b>Angular</b> - (gerar aplicação web responsiva)
 ## Integração com API's
 - <b>Amazon S3</b> - (para armazenamento de imagens dos clientes e dos produtos)
 - <b>Google SMTP</b> - (para comunicação sobre confirmação do pagamento.)
-
 # Implantação do Projeto
 O projeto foi implatado na nuvem através da plataforma PaaS <strong>Heroku</strong> com entrega contínua (Github Actions) para a parte do back-end, dispondo assim de um ambiente que oferece alta disponibilidade e escalabilidade permitindo ao Sistema ótimos níveis de performance e funcionabilidade.
-
-Para o armazenamento dos dados foi utilizado o Banco de Dados <strong>Postgresql</strong>.
-
 # Como testar o projeto localmente?
-
 Pré-requisito:
 - [Java 11](https://www.oracle.com/br/java/technologies/javase-jdk11-downloads.html)
 ## Back end
@@ -94,6 +89,8 @@ $ cd springboot-jwt-backend
 ```
 $ ./mvnw spring-boot:run
 ```
+Confira a documentação desta API conforme especificação <b>Open API 3.0</b> neste link: 
+ [documentação da API](http://localhost:8080/swagger-ui-custom.html).
 
 # Autor
 Hélio Dourado
