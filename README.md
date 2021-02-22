@@ -1,8 +1,8 @@
-## Solução Digital "E-Commerce" para Loja Virtual
+# Solução Digital "E-Commerce" para Loja Virtual
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/heliohdd/hdsdeliver-sds2/blob/main/LICENSE) 
 
-# Sobre o projeto
+## Sobre o projeto
 Este projeto é uma aplicação backend que implementa os principais módulos do framework Spring Boot tais como Spring Web MVC, Spring Data JPA, Spring Security com JWT e Spring Cloud AWS para Serviço AWS S3 para armazenamento de imagens em nuvem.
 
 Algumas funcionalidades interessantes do projeto são:
