@@ -31,6 +31,10 @@ import com.heliohdd.cursomc.repositories.ProdutoRepository;
 import com.heliohdd.cursomc.repositories.enums.EstadoPagamento;
 import com.heliohdd.cursomc.repositories.enums.TipoCliente;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
+
+@OpenAPIDefinition(info = @Info(title = "API Rest Java Spring Boot", version = "1.0", description = "API Rest usando Java com Spring Boot e documentação OpenAPI 3.0"))
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
 
