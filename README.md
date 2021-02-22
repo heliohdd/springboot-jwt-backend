@@ -7,12 +7,12 @@ Este projeto é uma aplicação backend que implementa os principais módulos do
 
 Algumas funcionalidades interessantes do projeto são:
 
--Validação customizada de CPF ou CNPJ na inserção de cliente;
--Paginação com controle de parâmetros adicionais na requisição;
--Validação customizada com e-mail não repetido no cadastro de cliente;
--Busca de Produtos por nome ou por Categoria;
--Controle de permissão ao usuário conforme perfil (Administrador ou Usuário);
--Recuperação de senha;
+- Validação customizada de CPF ou CNPJ na inserção de cliente;
+- Validação customizada com e-mail não repetido no cadastro de cliente;
+- Recuperação de senha;
+- Controle de permissão ao usuário conforme perfil (Administrador ou Usuário);
+- Busca de Produtos por nome ou por Categoria; e,
+- Paginação com controle de parâmetros adicionais na requisição.
 
 Esta aplicação consiste em um <strong>Sistema de Controle de Pedidos</strong> para o contexto de "e-commerce". Este sitema permite o controle de uma "Loja Virtual" composta por um catálogo de "Produtos" organizados em "Categorias", que podem ser escolhidas pelo "Cliente", e direcionadas para serem entregues em um determinado "Endereço". Após a conclusão do "Pedido", o sistema se comunica com uma API para "Pagamentos" validando então a compra conforme autorização após a realização da operação de pagamento. O sistema ainda envia um e-mail para o cliente com os dados do pedido avisando sobre a confirmação de pagamento.
 
