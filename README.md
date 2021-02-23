@@ -89,9 +89,14 @@ $ cd springboot-jwt-backend
 ```
 $ ./mvnw spring-boot:run
 ```
+
+**Testar funcionalidades da API**
+
+[http://localhost:8080/swagger-ui-custom.html](http://localhost:8080/swagger-ui-custom.html)
+<!--
 Confira a documentação desta API conforme especificação <b>Open API 3.0</b> neste link: 
  [documentação da API](http://localhost:8080/swagger-ui-custom.html).
-
+-->
 # Autor
 Hélio Dourado
 
